@@ -2,7 +2,6 @@ import numpy as np
 
 # chain has to be formed in a way that it creates a 3x3x3 cube
 def dfs(coordinates={}, previousMoves=[], lastPos=(0,0,0), index=0):
-    #print(previousMoves, list(coordinates.keys()), lastPos, index)
     if index == len(chain):
         return previousMoves
     length = chain[index]
